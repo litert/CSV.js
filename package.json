@@ -1,0 +1,49 @@
+{
+  "name": "@litert/csv",
+  "version": "0.1.0",
+  "description": "The csv file operate library for LiteRT.",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "prepublishOnly": "npm run rebuild",
+    "build": "echo Using TypeScript && tsc -v && tsc -p .",
+    "build-watch": "echo Using TypeScript && tsc -v && tsc -w -p .",
+    "rebuild": "npm run clean && npm run lint && npm run build",
+    "clean": "rm -rf lib examples",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint --ext ts src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litert/csv.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litert/csv.js/issues"
+  },
+  "homepage": "https://github.com/litert/csv.js#readme",
+  "keywords": [
+    "litert",
+    "csv",
+    "buffer"
+  ],
+  "author": "Angus.Fenying <fenying@litert.org> (https://fenying.net)",
+  "license": "Apache-2.0",
+  "typings": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint && npm run typecheck"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/node": "^15.12.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.28.0",
+    "husky": "^6.0.0",
+    "typescript": "^4.3.2"
+  }
+}

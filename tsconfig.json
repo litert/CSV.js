@@ -1,0 +1,49 @@
+
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "rootDir": "./src/",
+    "outDir": "./",
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "newLine": "LF",
+
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnusedLabels": false,
+
+    "allowUnreachableCode": true,
+    "noUncheckedIndexedAccess": false
+  },
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "./lib/*.ts",
+    "./lib/**/*.ts",
+    "./examples/*.ts",
+    "./examples/**/*.ts"
+  ]
+}
