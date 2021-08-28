@@ -23,19 +23,12 @@
   "homepage": "https://github.com/litert/csv.js#readme",
   "keywords": [
     "litert",
-    "csv",
-    "buffer"
+    "csv"
   ],
   "author": "Angus.Fenying <fenying@litert.org> (https://fenying.net)",
   "license": "Apache-2.0",
   "typings": "lib/index.d.ts",
   "types": "lib/index.d.ts",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint && npm run typecheck"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
